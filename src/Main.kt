@@ -35,13 +35,24 @@ fun main() {
     solarSystem.add(3, "Theia")
     solarSystem[3] = "Future Moon"
 
-    for (planet in solarSystem) {
-        print(planet)
-        if (solarSystem.indexOf(planet) != (solarSystem.size - 1)) {
-            print(" - ")
-        }
-    }
+    printList(solarSystem)
+
     println()
     println(solarSystem[3])
     println(solarSystem[9])
+
+    println(solarSystem.removeAt(3))
+    println(solarSystem.remove("Future Moon"))
+    println(solarSystem.remove("lakdjfadf"))
+
+    printList(solarSystem)
+}
+
+fun printList(aList: List<String>) {
+    for (planet in aList) {
+        print(planet)
+        if (aList.indexOf(planet) != (aList.size - 1)) {
+            print(" - ")
+        }
+    }
 }
