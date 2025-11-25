@@ -1,2 +1,5 @@
 fun main() {
+    val rockPlanets = arrayOf<String>("Mercury", "Venus", "Earth", "Mars")
+    val gasPlanets = arrayOf("Jupiter", "Satan", "Uranus", "Neptune")
+    val solarSystem = rockPlanets + gasPlanets
 }
