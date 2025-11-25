@@ -46,6 +46,9 @@ fun main() {
     println(solarSystem.remove("lakdjfadf"))
 
     printList(solarSystem)
+
+    println("Future Moon" in solarSystem)
+    println(solarSystem.contains("Pluto"))
 }
 
 fun printList(aList: List<String>) {
@@ -53,6 +56,8 @@ fun printList(aList: List<String>) {
         print(planet)
         if (aList.indexOf(planet) != (aList.size - 1)) {
             print(" - ")
+        } else {
+            println()
         }
     }
 }
