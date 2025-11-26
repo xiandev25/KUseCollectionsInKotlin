@@ -30,34 +30,37 @@ fun main() {
 //        println(planet)
 //    }
 
-    val solarSystem = mutableListOf<String>("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
-    solarSystem.add("Pluto")
-    solarSystem.add(3, "Theia")
-    solarSystem[3] = "Future Moon"
+//    val solarSystem = mutableListOf<String>("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+//    solarSystem.add("Pluto")
+//    solarSystem.add(3, "Theia")
+//    solarSystem[3] = "Future Moon"
+//
+//    printList(solarSystem)
+//
+//    println()
+//    println(solarSystem[3])
+//    println(solarSystem[9])
+//
+//    println(solarSystem.removeAt(3))
+//    println(solarSystem.remove("Future Moon"))
+//    println(solarSystem.remove("lakdjfadf"))
+//
+//    printList(solarSystem)
+//
+//    println("Future Moon" in solarSystem)
+//    println(solarSystem.contains("Pluto"))
 
-    printList(solarSystem)
-
-    println()
-    println(solarSystem[3])
-    println(solarSystem[9])
-
-    println(solarSystem.removeAt(3))
-    println(solarSystem.remove("Future Moon"))
-    println(solarSystem.remove("lakdjfadf"))
-
-    printList(solarSystem)
-
-    println("Future Moon" in solarSystem)
-    println(solarSystem.contains("Pluto"))
+    val solarSystem = mutableSetOf<String>("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+    println(solarSystem.size)
 }
 
-fun printList(aList: List<String>) {
-    for (planet in aList) {
-        print(planet)
-        if (aList.indexOf(planet) != (aList.size - 1)) {
-            print(" - ")
-        } else {
-            println()
-        }
-    }
-}
+//fun printList(aList: List<String>) {
+//    for (planet in aList) {
+//        print(planet)
+//        if (aList.indexOf(planet) != (aList.size - 1)) {
+//            print(" - ")
+//        } else {
+//            println()
+//        }
+//    }
+//}
