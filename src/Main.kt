@@ -80,6 +80,9 @@ fun main() {
 
     solarSystem["Pluto"] = 5
     println(solarSystem.size)
+
+    println(solarSystem["Pluto"])
+    println(solarSystem.get("Theia"))
 }
 
 //fun printList(aList: List<String>) {
