@@ -55,6 +55,9 @@ fun main() {
 
     solarSystem.add("Pluto")
     println(solarSystem.size)
+
+    println(solarSystem.contains("Pluto"))
+    println("Future Earth" in solarSystem)
 }
 
 //fun printList(aList: List<String>) {
