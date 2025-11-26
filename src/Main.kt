@@ -77,6 +77,9 @@ fun main() {
         "Neptune" to 14
     )
     println(solarSystem.size)
+
+    solarSystem["Pluto"] = 5
+    println(solarSystem.size)
 }
 
 //fun printList(aList: List<String>) {
