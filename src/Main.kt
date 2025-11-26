@@ -50,16 +50,32 @@ fun main() {
 //    println("Future Moon" in solarSystem)
 //    println(solarSystem.contains("Pluto"))
 
-    val solarSystem = mutableSetOf<String>("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
-    println(solarSystem.size)
+//    val solarSystem = mutableSetOf<String>("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+//    println(solarSystem.size)
+//
+//    solarSystem.add("Pluto")
+//    println(solarSystem.size)
+//
+//    println(solarSystem.contains("Pluto"))
+//    println("Future Earth" in solarSystem)
+//
+//    solarSystem.add("Pluto")
+//    println(solarSystem.size)
+//
+//    solarSystem.remove("Pluto")
+//    println(solarSystem.contains("Pluto"))
+//    println(solarSystem.size)
 
-    solarSystem.add("Pluto")
-    println(solarSystem.size)
-
-    println(solarSystem.contains("Pluto"))
-    println("Future Earth" in solarSystem)
-
-    solarSystem.add("Pluto")
+    val solarSystem = mutableMapOf<String, Int>(
+        "Mercury" to 0,
+        "Venus" to 0,
+        "Earth" to 1,
+        "Mars" to 2,
+        "Jupiter" to 79,
+        "Saturn" to 82,
+        "Uranus" to 27,
+        "Neptune" to 14
+    )
     println(solarSystem.size)
 }
 
