@@ -52,6 +52,9 @@ fun main() {
 
     val solarSystem = mutableSetOf<String>("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
     println(solarSystem.size)
+
+    solarSystem.add("Pluto")
+    println(solarSystem.size)
 }
 
 //fun printList(aList: List<String>) {
