@@ -86,6 +86,10 @@ fun main() {
 
     println(solarSystem.remove("Pluto"))
     println(solarSystem.size)
+
+    solarSystem["Jupiter"] = 78
+    solarSystem.put("Future Earth",2)
+    println(solarSystem.size)
 }
 
 //fun printList(aList: List<String>) {
